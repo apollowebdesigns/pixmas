@@ -37,3 +37,6 @@ def start():
 def stop():
     tree.turnOff()
     return jsonify('done')
+
+if __name__ == '__main__':
+   app.run()
