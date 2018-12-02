@@ -7,20 +7,23 @@ from signal import pause
 class Tree():
     def __init__(self):
         self.on = False
+        self.breaker = None
 
     def setLights(self):
-        if(self.on == True):
-            tree = LEDBoard(*range(2,28),pwm=True)
-            for led in tree:
-                led.source_delay = 0.1
-                led.source = random_values()
-            pause()
+        tree = LEDBoard(*range(2,28),pwm=True)
+        for led in tree:
+            led.source_delay = 0.1
+            led.source = random_values()
+            if(self.on == False):
+                break
+
+        pause()
 
     def turnOn(self):
         self.on = True
 
     def turnOff(self):
-        self.on = False
+        self.off = False
 
 tree = Tree()
 
@@ -30,7 +33,7 @@ def hello_world():
 
 @app.route('/on')
 def start():
-    tree.turnOn()
+    tree.setLights()
     return jsonify('done')
 
 @app.route('/off')
