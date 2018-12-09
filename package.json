@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/apollowebdesigns/pixmas/issues"
   },
-  "homepage": "https://github.com/apollowebdesigns/pixmas#readme"
+  "homepage": "https://github.com/apollowebdesigns/pixmas#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
