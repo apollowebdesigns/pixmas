@@ -1,8 +1,7 @@
-from gpiozero import LEDBoard
-from gpiozero.tools import random_values
-from signal import pause
-tree = LEDBoard(*range(2,28),pwm=True)
-for led in tree:
- led.source_delay = 0.1
- led.source = random_values()
-pause()
+const {LEDBoard} = require('gpiozero');
+const {random_values} = require('gpiozero/tools');
+let numbers = [];
+for(let i = 2; i < 28; i++) {
+    numbers.push(i);    
+}
+const tree = LEDBoard(numbers, True);
