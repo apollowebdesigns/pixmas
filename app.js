@@ -1,4 +1,5 @@
 const {LEDBoard} = require('js-gpiozero');
+console.log(JSON.stringify(LEDBoard));
 const {random_values} = require('gpiozero/tools');
 let numbers = [];
 for(let i = 2; i < 28; i++) {
