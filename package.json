@@ -1,0 +1,19 @@
+{
+  "name": "pixmas",
+  "version": "1.0.0",
+  "description": "Quick server to control xmas lights!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apollowebdesigns/pixmas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apollowebdesigns/pixmas/issues"
+  },
+  "homepage": "https://github.com/apollowebdesigns/pixmas#readme"
+}
