@@ -1,5 +1,5 @@
 // const boards = require('js-gpiozero/gpiozero/boards');
-const {LEDBoard} = require('js-gpiozero/gpiozero/boards/LEDBoard');
+const LEDBoard = require('js-gpiozero/gpiozero/boards/LEDBoard');
 console.log(JSON.stringify(LEDBoard));
 const {random_values} = require('gpiozero/tools');
 let numbers = [];
