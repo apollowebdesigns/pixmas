@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/apollowebdesigns/pixmas#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "js-gpiozero": "1.2.4"
   }
 }
