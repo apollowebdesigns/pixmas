@@ -1,4 +1,4 @@
-const boards = require('js-gpiozero/gpiozero/boards');
+// const boards = require('js-gpiozero/gpiozero/boards');
 const {LEDBoard} = require('js-gpiozero/gpiozero/boards/LEDBoard');
 console.log(JSON.stringify(boards));
 console.log(JSON.stringify(LEDBoard));
