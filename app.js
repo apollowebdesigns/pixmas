@@ -1,4 +1,4 @@
-const gpiozero = require('js-gpiozero');
+const gpiozero = require('js-gpiozero/gpiozero');
 console.log(JSON.stringify(gpiozero));
 const {random_values} = require('gpiozero/tools');
 let numbers = [];
